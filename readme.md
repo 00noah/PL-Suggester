@@ -2,11 +2,11 @@
 ### By Noah Horwitz
 
 ###### Description of program:
-
+  * This is an application for people interested in coding to decide which programming language they should learn first.
 
 
 ###### Program setup instructions:
-
+  * This project should be viewable with an internet connection and web browser.
 
 
 ###### Links to site on GitHub Pages:
