@@ -42,10 +42,19 @@
 <!-- Question 3 -->
         <div class="card border-success">
           <div class="card-header">
-            <label for="adventureInput">How adventurous are you? (Left = less adventurous, right = more adventurous)</label>
+            <label for="language">Is there a language you've hear of that you a most interested in learing?</label>
           </div>
           <div class="card-body">
-            <input type="range" class="custom-range" min="1" max="5" id="adventureInput">
+            <select class="form-control" id="language" required>
+              <option value="0">Nope</option>
+              <option value="1">Go</option>
+              <option value="2">Python</option>
+              <option value="3">Rust</option>
+              <option value="4">Swift</option>
+              <option value="5">V</option>
+            </select>
+
+
           </div>
         </div>
 <!-- Question 4 -->
@@ -60,17 +69,17 @@
 <!-- Question 5 -->
         <div class="card border-primary">
           <div class="card-header">
-            <label for="adventureInput">Do you like old school dependability or new age unproven technologies?</label>
+            <label for="adventureInput">Do you think you would prefer design (front end) or logic (back end) in a language?</label>
           </div>
           <div class="card-body">
             <center>
             <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-              <label class="custom-control-label" for="customRadioInline1">Dependable</label>
+              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value"FFF">
+              <label class="custom-control-label" for="customRadioInline1">Design</label>
             </div>
             <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-              <label class="custom-control-label" for="customRadioInline2">Unproven</label>
+              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" value"BBB">
+              <label class="custom-control-label" for="customRadioInline2">Logic</label>
             </div>
             <center>
           </div>
