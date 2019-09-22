@@ -26,12 +26,24 @@
 <!-- Question 2 -->
         <div class="card border-warning">
           <div class="card-header">
-            <label for="adventureInput">How adventurous are you? (Left = less adventurous, right = more adventurous)</label>
+            <label for="hours">How many hours per week can you comitt to learning a new language?</label>
           </div>
           <div class="card-body">
-            <input type="range" class="custom-range" min="1" max="5" id="adventureInput" value="3">
+            <select class="form-control" id="hours" required>
+              <option value="">Pick one:</option>
+              <option value="1">&lt;5 hours</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">40+ hours</option>
+            </select>
           </div>
         </div>
+
+
+
+
+
 <!-- Question 3 -->
         <div class="card border-success">
           <div class="card-header">
