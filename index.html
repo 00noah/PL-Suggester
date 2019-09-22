@@ -26,31 +26,26 @@
 <!-- Question 2 -->
         <div class="card border-warning">
           <div class="card-header">
-            <label for="hours">How many hours per week can you comitt to learning a new language?</label>
+            <label for="hours">How many hours per week can you commit to learning a new language?</label>
           </div>
           <div class="card-body">
             <select class="form-control" id="hours" required>
               <option value="">Pick one:</option>
-              <option value="1">&lt;5 hours</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">40+ hours</option>
+              <option value="1">&lt;10 hours per week</option>
+              <option value="2">Between 10 and 19 hours per week</option>
+              <option value="3">Between 20 and 29 hours per week</option>
+              <option value="4">Between 30 and 39 hours per week</option>
+              <option value="5">&gt;40 hours per week</option>
             </select>
           </div>
         </div>
-
-
-
-
-
 <!-- Question 3 -->
         <div class="card border-success">
           <div class="card-header">
             <label for="adventureInput">How adventurous are you? (Left = less adventurous, right = more adventurous)</label>
           </div>
           <div class="card-body">
-            <input type="range" class="custom-range" min="1" max="5" id="adventureInput" value="3">
+            <input type="range" class="custom-range" min="1" max="5" id="adventureInput">
           </div>
         </div>
 <!-- Question 4 -->
@@ -59,16 +54,25 @@
             <label for="adventureInput">How adventurous are you? (Left = less adventurous, right = more adventurous)</label>
           </div>
           <div class="card-body">
-            <input type="range" class="custom-range" min="1" max="5" id="adventureInput" value="3">
+            <input type="range" class="custom-range" min="1" max="5" id="adventureInput">
           </div>
         </div>
 <!-- Question 5 -->
         <div class="card border-primary">
           <div class="card-header">
-            <label for="adventureInput">How adventurous are you? (Left = less adventurous, right = more adventurous)</label>
+            <label for="adventureInput">Do you like old school dependability or new age unproven technologies?</label>
           </div>
           <div class="card-body">
-            <input type="range" class="custom-range" min="1" max="5" id="adventureInput" value="3">
+            <center>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline1">Dependable</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline2">Unproven</label>
+            </div>
+            <center>
           </div>
         </div>
 <!-- Question 6 -->
@@ -77,11 +81,11 @@
             <label for="adventureInput">How adventurous are you? (Left = less adventurous, right = more adventurous)</label>
           </div>
           <div class="card-body">
-            <input type="range" class="custom-range" min="1" max="5" id="adventureInput" value="3">
+            <input type="range" class="custom-range" min="1" max="5" id="adventureInput">
           </div>
         </div>
       </form>
-      <button type="submit" class="btn btn-primary mb-3">Submit</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
       <!-- Question 6 -->
       <p>Results</p>
 
