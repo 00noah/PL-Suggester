@@ -21,3 +21,8 @@ body {
 label {
   margin-bottom: 1px;
 }
+
+
+.jumbotron {
+  display: none;
+}
