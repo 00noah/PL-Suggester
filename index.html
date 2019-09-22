@@ -13,10 +13,39 @@
       <h1>Programming Language Suggester</h1>
       <h4>Please, complete this short survey to help you choose which Programming language might be the best fit for you!</h4>
       <HR>
-
       <form class="survey">
-      <label for="adventureInput">How adventurous are you? (Left = less adventurous, right = more adventurous)</label>
-      <input type="range" class="custom-range" min="1" max="5" id="adventureInput" default="3">
+
+        <div class="card border-danger">
+          <div class="card-header">
+            <label for="name">What is your first name?</label>
+          </div>
+          <div class="card-body">
+            <input type="text" class="form-control" id="name">
+          </div>
+        </div>
+<!-- Question 1 -->
+        <div class="card border-warning">
+          <div class="card-header">
+            <label for="adventureInput">How adventurous are you? (Left = less adventurous, right = more adventurous)</label>
+          </div>
+          <div class="card-body">
+            <input type="range" class="custom-range" min="1" max="5" id="adventureInput" value="3">
+          </div>
+        </div>
+<!-- Question 2 -->
+        <div class="card border-warning">
+          <div class="card-header">
+            <label for="adventureInput">How adventurous are you? (Left = less adventurous, right = more adventurous)</label>
+          </div>
+          <div class="card-body">
+            <input type="range" class="custom-range" min="1" max="5" id="adventureInput" value="3">
+          </div>
+        </div>
+
+
+
+
+
       </form>
       <button type="submit" class="btn btn-primary mb-3">Submit</button>
 
