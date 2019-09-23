@@ -13,90 +13,88 @@
       <h1>Programming Language Suggester</h1>
       <h4>Please, complete this short survey to help you choose which Programming language might be the best fit for you!</h4>
       <HR>
-      <div id="questions">
-        <form>
+      <form id="questions">
 <!-- Question 1 -->
-          <div class="card border-danger">
-            <div class="card-header">
-              <label for="name">What is your first name?</label>
-            </div>
-            <div class="card-body">
-              <input type="text" class="form-control" id="name">
-            </div>
+        <div class="card border-danger">
+          <div class="card-header">
+            <label for="name">What is your first name?</label>
           </div>
+          <div class="card-body">
+            <input type="text" class="form-control" id="name">
+          </div>
+        </div>
 <!-- Question 2 -->
-          <div class="card border-warning">
-            <div class="card-header">
-              <label for="hours">How many hours per week can you commit to learning a new language?</label>
-            </div>
-            <div class="card-body">
-              <select class="form-control" id="hours" required>
-                <option value="">Pick one:</option>
-                <option value="1">&lt;10 hours per week</option>
-                <option value="2">Between 10 and 19 hours per week</option>
-                <option value="3">Between 20 and 29 hours per week</option>
-                <option value="4">Between 30 and 39 hours per week</option>
-                <option value="5">&gt;40 hours per week</option>
-              </select>
-            </div>
+        <div class="card border-warning">
+          <div class="card-header">
+            <label for="hours">How many hours per week can you commit to learning a new language?</label>
           </div>
+          <div class="card-body">
+            <select class="form-control" id="hours" required>
+              <option value="">Pick one:</option>
+              <option value="1">&lt;10 hours per week</option>
+              <option value="2">Between 10 and 19 hours per week</option>
+              <option value="3">Between 20 and 29 hours per week</option>
+              <option value="4">Between 30 and 39 hours per week</option>
+              <option value="5">&gt;40 hours per week</option>
+            </select>
+          </div>
+        </div>
 <!-- Question 3 -->
-          <div class="card border-success">
-            <div class="card-header">
-              <label for="adventureInput">How adventurous are you? (Left = less adventurous, right = more adventurous)</label>
-            </div>
-            <div class="card-body">
-              <input type="range" class="custom-range" min="1" max="5" id="adventureInput">
-            </div>
+        <div class="card border-success">
+          <div class="card-header">
+            <label for="adventureInput">How adventurous are you? (Left = less adventurous, right = more adventurous)</label>
           </div>
+          <div class="card-body">
+            <input type="range" class="custom-range" min="1" max="5" id="adventureInput">
+          </div>
+        </div>
 <!-- Question 4 -->
-          <div class="card border-primary">
-            <div class="card-header">
-              <label for="adventure">Do you think you would prefer design (front end) or logic (back end) in a language?</label>
-            </div>
-            <div class="card-body">
-              <center>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value"FFF">
-                <label class="custom-control-label" for="customRadioInline1">Design</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" value"BBB">
-                <label class="custom-control-label" for="customRadioInline2">Logic</label>
-              </div>
-              <center>
-            </div>
+        <div class="card border-primary">
+          <div class="card-header">
+            <label for="adventure">Do you think you would prefer design (front end) or logic (back end) in a language?</label>
           </div>
+          <div class="card-body">
+            <center>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value"FFF">
+              <label class="custom-control-label" for="customRadioInline1">Design</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" value"BBB">
+              <label class="custom-control-label" for="customRadioInline2">Logic</label>
+            </div>
+            <center>
+          </div>
+        </div>
 <!-- Question 5 -->
-          <div class="card border-info">
-            <div class="card-header">
-              <label for="adventureInput">How important is the language's <em>current</em> popularity to you? (Left = less so, right = more so)</label>
-            </div>
-            <div class="card-body">
-              <input type="range" class="custom-range" min="1" max="5" id="adventureInput">
-            </div>
+        <div class="card border-info">
+          <div class="card-header">
+            <label for="adventureInput">How important is the language's <em>current</em> popularity to you? (Left = less so, right = more so)</label>
           </div>
+          <div class="card-body">
+            <input type="range" class="custom-range" min="1" max="5" id="adventureInput">
+          </div>
+        </div>
 <!-- Question 6 -->
-          <div class="card border-secondary">
-            <div class="card-header">
-              <label for="language">Is there a language you've heard of that you a most interested in learning?</label>
-            </div>
-            <div class="card-body">
-              <select class="form-control" id="language" required>
-                <option value="0">Nope</option>
-                <option value="1">Python</option>
-                <option value="2">Ruby</option>
-                <option value="3">Go</option>
-                <option value="4">Swift</option>
-                <option value="5">V</option>
-              </select>
-            </div>
+        <div class="card border-secondary">
+          <div class="card-header">
+            <label for="language">Is there a language you've heard of that you a most interested in learning?</label>
           </div>
-          <p>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </p>
-        </form>
-      </div>
+          <div class="card-body">
+            <select class="form-control" id="language" required>
+              <option value="0">Nope</option>
+              <option value="1">Python</option>
+              <option value="2">Ruby</option>
+              <option value="3">Go</option>
+              <option value="4">Swift</option>
+              <option value="5">V</option>
+            </select>
+          </div>
+        </div>
+        <p>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </p>
+      </form>
 <!-- Results -->
       <div class="jumbotron">
         <p>Thanks <span id="name"></span>,</p>

@@ -1,13 +1,13 @@
 $(document).ready(function() {
-  $("form").submit(function(event) {
+  $("#questions").submit(function(event) {
     event.preventDefault();
-    let nameInput = ($("input#name").val());
     // let side2Input = parseInt($("#side2").val());
     // let side3Input = parseInt($("#side3").val());
+		var nameInput = $("#name").val();
+    $("#name").text(nameInput);
 
-
+    console.log(name);
     $(".jumbotron").show();
-    $("input#name").text(nameInput.toUpperCase());
     // if (side1Input === side2Input && side2Input === side3Input) {
     //   $("#results").text("an Equilateral");
     // }
