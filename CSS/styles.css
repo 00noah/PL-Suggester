@@ -30,3 +30,7 @@ label {
 .RPG, .Python, .Ruby, .JavaScript, .C, .Go, .Swift, .V {
   display: none;
 }
+
+.math {
+  display: none;
+}

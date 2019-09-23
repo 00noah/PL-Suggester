@@ -52,7 +52,7 @@ $(document).ready(function() {
     else if (math <= 14) {
       $(".results").text("Go");
       $(".Go").show();
-      $(".RPG, .Python, .Ruby, .JavaScript, .C, .Go, .Swift, .V").hide();
+      $(".RPG, .Python, .Ruby, .JavaScript, .C, .Swift, .V").hide();
     }
     else if (math <= 17) {
       $(".results").text("Swift");
