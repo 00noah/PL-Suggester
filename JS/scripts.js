@@ -7,16 +7,16 @@ $(document).ready(function() {
 		var nameInput = $("#firstName").val();
     $(".firstName").text(nameInput);
 
-		var hoursInput = $("#hours").val();
+		var hoursInput = parseInt($("#hours").val());
     $(".hours").text(hoursInput);
 
 		var adventurousInput = parseInt($("#adventurous").val());
-		$(".adventurous").val(adventurousInput);
+		$(".adventurous").text(adventurousInput);
 
 		var frontOrBackInput = $("#frontOrBack").val();
 		$(".frontOrBack").text(frontOrBackInput);
 
-		var popularityInput = $("#popularity").val();
+		var popularityInput = parseInt($("#popularity").val());
 		$(".popularity").text(popularityInput);
 
 		var languageInput = $("#language").val();
