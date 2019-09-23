@@ -30,28 +30,29 @@ $(document).ready(function() {
     $(".math").text(math);
 
     if (math <= 2) {
-      $("#results").text("RPG III");
+      $(".results").text("RPG III");
+      $(".RPG").show();
     }
     else if (math <= 7) {
-      $("#results").text("V");
+      $(".results").text("V");
     }
     else if (math <= 9) {
-      $("#results").text("Ruby");
+      $(".results").text("Ruby");
     }
-    else if (math <= 10) {
-      $("#results").text("C#");
+    else if (math <= 11) {
+      $(".results").text("C#");
     }
-    else if (math <= 12) {
-      $("#results").text("Go");
+    else if (math <= 14) {
+      $(".results").text("Go");
     }
-    else if (math <= 13) {
-      $("#results").text("Swift");
+    else if (math <= 17) {
+      $(".results").text("Swift");
     }
-    else if (math <= 16) {
-      $("#results").text("Python");
+    else if (math <= 21) {
+      $(".results").text("Python");
     }
     else {
-      $("#results").text("JavaScript");
+      $(".results").text("JavaScript");
     }
 
 
