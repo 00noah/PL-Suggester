@@ -16,6 +16,8 @@ $(document).ready(function() {
 		var frontOrBackInput = $("#frontOrBack").val();
 		$(".frontOrBack").text(frontOrBackInput);
 
+		$("#questions input[type='radio']:checked").val();
+
 		var popularityInput = parseInt($("#popularity").val());
 		$(".popularity").text(popularityInput);
 
