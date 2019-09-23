@@ -14,110 +14,109 @@
       <h4>Please, complete this short survey to help you choose which Programming language might be the best fit for you!</h4>
       <HR>
       <div class="survey">
-      <form id="questions">
-<!-- Question 1 -->
-        <div class="card border-danger">
-          <div class="card-header">
-            <label for="firstName">What is your first name?</label>
+        <form id="questions">
+  <!-- Question 1 -->
+          <div class="card border-danger">
+            <div class="card-header">
+              <label for="firstName">What is your first name?</label>
+            </div>
+            <div class="card-body">
+              <input type="text" class="form-control" id="firstName">
+            </div>
           </div>
-          <div class="card-body">
-            <input type="text" class="form-control" id="firstName">
+  <!-- Question 2 -->
+          <div class="card border-warning">
+            <div class="card-header">
+              <label for="hours">How many hours per week can you commit to learning a new language?</label>
+            </div>
+            <div class="card-body">
+              <select class="form-control" id="hours" required>
+                <option value="">Pick one:</option>
+                <option value="1">&lt;10 hours per week</option>
+                <option value="2">Between 10 and 19 hours per week</option>
+                <option value="3">Between 20 and 29 hours per week</option>
+                <option value="4">Between 30 and 39 hours per week</option>
+                <option value="5">&gt;40 hours per week</option>
+              </select>
+            </div>
           </div>
-        </div>
-<!-- Question 2 -->
-        <div class="card border-warning">
-          <div class="card-header">
-            <label for="hours">How many hours per week can you commit to learning a new language?</label>
+  <!-- Question 3 -->
+          <div class="card border-success">
+            <div class="card-header">
+              <label for="adventurous">How adventurous are you? (Left = less adventurous, right = more adventurous)</label>
+            </div>
+            <div class="card-body">
+              <input type="range" class="custom-range" min="0" max="5" id="adventurous">
+            </div>
           </div>
-          <div class="card-body">
-            <select class="form-control" id="hours" required>
-              <option value="">Pick one:</option>
-              <option value="1">&lt;10 hours per week</option>
-              <option value="2">Between 10 and 19 hours per week</option>
-              <option value="3">Between 20 and 29 hours per week</option>
-              <option value="4">Between 30 and 39 hours per week</option>
-              <option value="5">&gt;40 hours per week</option>
-            </select>
+  <!-- Question 4 -->
+          <div class="card border-primary">
+            <div class="card-header">
+              <label for="frontOrBack">Do you think you would prefer working on business logic (back end) or design (front end) programming?</label>
+            </div>
+            <div class="card-body">
+              <center>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" value="0" required>
+                  <label class="custom-control-label" for="customRadioInline2">Business Logic</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value="10">
+                  <label class="custom-control-label" for="customRadioInline1">Design</label>
+                </div>
+              <center>
+            </div>
           </div>
-        </div>
-<!-- Question 3 -->
-        <div class="card border-success">
-          <div class="card-header">
-            <label for="adventurous">How adventurous are you? (Left = less adventurous, right = more adventurous)</label>
+  <!-- Question 5 -->
+          <div class="card border-info">
+            <div class="card-header">
+              <label for="popularity">How important is the language's <em>current</em> popularity to you? (Left = less so, right = more so)</label>
+            </div>
+            <div class="card-body">
+              <input type="range" class="custom-range" min="0" max="5" id="popularity">
+            </div>
           </div>
-          <div class="card-body">
-            <input type="range" class="custom-range" min="0" max="5" id="adventurous">
+  <!-- Question 6 -->
+          <div class="card border-secondary">
+            <div class="card-header">
+              <label for="language">Is there a language you've heard of that you a most interested in learning?</label>
+            </div>
+            <div class="card-body">
+              <select class="form-control" id="language" required>
+                <option value="0">Nope</option>
+                <option value="1">RPG III</option>
+                <option value="2">V</option>
+                <option value="3">Ruby</option>
+                <option value="4">C#</option>
+                <option value="5">Go</option>
+                <option value="6">Swift</option>
+                <option value="7">Python</option>
+                <option value="8">JavaScript</option>
+              </select>
+            </div>
           </div>
-        </div>
-<!-- Question 4 -->
-        <div class="card border-primary">
-          <div class="card-header">
-            <label for="frontOrBack">Do you think you would prefer working on business logic (back end) or design (front end) programming?</label>
-          </div>
-          <div class="card-body">
-            <center>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" value="0" required>
-                <label class="custom-control-label" for="customRadioInline2">Business Logic</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value="10">
-                <label class="custom-control-label" for="customRadioInline1">Design</label>
-              </div>
-            <center>
-          </div>
-        </div>
-<!-- Question 5 -->
-        <div class="card border-info">
-          <div class="card-header">
-            <label for="popularity">How important is the language's <em>current</em> popularity to you? (Left = less so, right = more so)</label>
-          </div>
-          <div class="card-body">
-            <input type="range" class="custom-range" min="0" max="5" id="popularity">
-          </div>
-        </div>
-<!-- Question 6 -->
-        <div class="card border-secondary">
-          <div class="card-header">
-            <label for="language">Is there a language you've heard of that you a most interested in learning?</label>
-          </div>
-          <div class="card-body">
-            <select class="form-control" id="language" required>
-              <option value="0">Nope</option>
-              <option value="1">RPG III</option>
-              <option value="2">V</option>
-              <option value="3">Ruby</option>
-              <option value="4">C#</option>
-              <option value="5">Go</option>
-              <option value="6">Swift</option>
-              <option value="7">Python</option>
-              <option value="8">JavaScript</option>
-            </select>
-          </div>
-        </div>
-        <p>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </p>
+          <p>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </p>
+        </form>
       </div>
 <!-- Results -->
-        <div class="jumbotron">
-          <p>Thanks <span class="firstName"></span>,</p>
-          <p>Your results indicate you should check out <span class="results"></span>.</p>
-          <p>You can learn more about <span class="results"></span> at:
-            <a href="https://en.wikipedia.org/wiki/RPG_III" class="RPG">IBM RPG III on Wikipedia</a>
-            <a href="https://vlang.io/" class="V">The V Programming Language website</a>
-            <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" class="Ruby">Ruby (programming language) on Wikipedia</a>
-            <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" class="C">C Sharp (programming language) on Wikipedia</a>
-            <a href="https://en.wikipedia.org/wiki/Go_(programming_language)" class="Go">Go (programming language) on Wikipedia</a>
-            <a href="https://en.wikipedia.org/wiki/Swift_(programming_language)" class="Swift">Swift (programming language) on Wikipedia</a>
-            <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" class="Python">Python_(programming_language) on Wikipedia</a>
-            <a href="https://en.wikipedia.org/wiki/JavaScript" class="JavaScript">JavaScript on Wikipedia</a>.
-          </p>
-
-          <p class="math">Math: <span class="math"></span></p>
-          <button type="reset" class="btn btn-warning"value="Reset" onClick="window.location.reload()">Try again</button>
-        </div>
-      </form>
+      <div class="jumbotron">
+        <p>Thanks <span class="firstName"></span>,</p>
+        <p>Your results indicate you should check out <span class="results"></span>.</p>
+        <p>You can learn more about <span class="results"></span> at:
+          <a href="https://en.wikipedia.org/wiki/RPG_III" class="RPG">IBM RPG III on Wikipedia</a>
+          <a href="https://vlang.io/" class="V">The V Programming Language website</a>
+          <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" class="Ruby">Ruby (programming language) on Wikipedia</a>
+          <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" class="C">C Sharp (programming language) on Wikipedia</a>
+          <a href="https://en.wikipedia.org/wiki/Go_(programming_language)" class="Go">Go (programming language) on Wikipedia</a>
+          <a href="https://en.wikipedia.org/wiki/Swift_(programming_language)" class="Swift">Swift (programming language) on Wikipedia</a>
+          <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" class="Python">Python_(programming_language) on Wikipedia</a>
+          <a href="https://en.wikipedia.org/wiki/JavaScript" class="JavaScript">JavaScript on Wikipedia</a>.
+        </p>
+        <p class="math">Math: <span class="math"></span></p>
+        <button type="reset" class="btn btn-warning"value="Reset" onClick="window.location.reload()">Try again</button>
+      </div>
     </div>
   </body>
 </html>
