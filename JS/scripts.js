@@ -1,8 +1,16 @@
+// BACK END:
+var math =
+
+
+// FRONT END:
+
 $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
 
 		$(".jumbotron").show();
+
+// VARIABLES:
 
 		var nameInput = $("#firstName").val();
     $(".firstName").text(nameInput);
@@ -22,18 +30,20 @@ $(document).ready(function() {
 		var languageInput = $("#language").val();
 		$(".language").text(languageInput);
 
-    // if (side1Input === side2Input && side2Input === side3Input) {
-    //   $("#results").text("an Equilateral");
-    // }
-    // else if (side1Input === side2Input || side2Input === side3Input || side1Input === side3Input) {
-    //   $("#results").text("an Isoceles");
-    // }
-    // else if (side1Input + side2Input <= side3Input || side2Input + side3Input <= side1Input || side1Input + side3Input <= side2Input) {
-    //   $("#results").text("something other than a");
-    // }
-    // else {
-    //   $("#results").text("a Scalene");
-    // }
+// BRANCHING:
+
+    if (side1Input === side2Input && side2Input === side3Input) {
+      $("#results").text("an Equilateral");
+    }
+    else if (side1Input === side2Input || side2Input === side3Input || side1Input === side3Input) {
+      $("#results").text("an Isoceles");
+    }
+    else if (side1Input + side2Input <= side3Input || side2Input + side3Input <= side1Input || side1Input + side3Input <= side2Input) {
+      $("#results").text("something other than a");
+    }
+    else {
+      $("#results").text("a Scalene");
+    }
 
 
     let elmnt = document.getElementById("results");
