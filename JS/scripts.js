@@ -24,7 +24,10 @@ $(document).ready(function() {
 
 // BRANCHING:
 
-    $(".jumbotron").show();
+    $(".jumbotron").slideDown();
+    $(".survey").slideUp();
+
+
 
     var math = (hoursInput + adventurousInput + frontOrBackInput + popularityInput + languageInput);
     $(".math").text(math);

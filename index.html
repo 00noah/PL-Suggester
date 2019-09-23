@@ -13,6 +13,7 @@
       <h1>Programming Language Suggester</h1>
       <h4>Please, complete this short survey to help you choose which Programming language might be the best fit for you!</h4>
       <HR>
+      <div class="survey">
       <form id="questions">
 <!-- Question 1 -->
         <div class="card border-danger">
@@ -97,23 +98,26 @@
         <p>
           <button type="submit" class="btn btn-primary">Submit</button>
         </p>
-      </form>
-<!-- Results -->
-      <div class="jumbotron">
-        <p>Thanks <span class="firstName"></span>,</p>
-        <p>Your results indicate you should check out <span class="results"></span>.</p>
-        <p>You can learn more about <span class="results"></span> at:
-          <a href="https://en.wikipedia.org/wiki/RPG_III" class="RPG">IBM RPG III on Wikipedia</a>
-          <a href="https://vlang.io/" class="V">The V Programming Language website</a>
-          <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" class="Ruby">Ruby (programming language) on Wikipedia</a>
-          <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" class="C">C Sharp (programming language) on Wikipedia</a>
-          <a href="https://en.wikipedia.org/wiki/Go_(programming_language)" class="Go">Go (programming language) on Wikipedia</a>
-          <a href="https://en.wikipedia.org/wiki/Swift_(programming_language)" class="Swift">Swift (programming language) on Wikipedia</a>
-          <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" class="Python">Python_(programming_language) on Wikipedia</a>
-          <a href="https://en.wikipedia.org/wiki/JavaScript" class="JavaScript">JavaScript on Wikipedia</a>.
-        </p>
-        <p class="math">Math: <span class="math"></span></p>
       </div>
+<!-- Results -->
+        <div class="jumbotron">
+          <p>Thanks <span class="firstName"></span>,</p>
+          <p>Your results indicate you should check out <span class="results"></span>.</p>
+          <p>You can learn more about <span class="results"></span> at:
+            <a href="https://en.wikipedia.org/wiki/RPG_III" class="RPG">IBM RPG III on Wikipedia</a>
+            <a href="https://vlang.io/" class="V">The V Programming Language website</a>
+            <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" class="Ruby">Ruby (programming language) on Wikipedia</a>
+            <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" class="C">C Sharp (programming language) on Wikipedia</a>
+            <a href="https://en.wikipedia.org/wiki/Go_(programming_language)" class="Go">Go (programming language) on Wikipedia</a>
+            <a href="https://en.wikipedia.org/wiki/Swift_(programming_language)" class="Swift">Swift (programming language) on Wikipedia</a>
+            <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" class="Python">Python_(programming_language) on Wikipedia</a>
+            <a href="https://en.wikipedia.org/wiki/JavaScript" class="JavaScript">JavaScript on Wikipedia</a>.
+          </p>
+
+          <p class="math">Math: <span class="math"></span></p>
+          <button type="reset" class="btn btn-warning"value="Reset" onClick="window.location.reload()">Try again</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>
