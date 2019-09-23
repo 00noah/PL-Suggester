@@ -1,5 +1,5 @@
 // BACK END:
-var math =
+
 
 
 // FRONT END:
@@ -21,7 +21,7 @@ $(document).ready(function() {
 		var adventurousInput = parseInt($("#adventurous").val());
 		$(".adventurous").text(adventurousInput);
 
-		var frontOrBackInput = $('input[name=customRadioInline1]:checked').val();
+		var frontOrBackInput = parseInt($('input[name=customRadioInline1]:checked').val());
 		$(".frontOrBack").text(frontOrBackInput);
 
 		var popularityInput = parseInt($("#popularity").val());
@@ -32,19 +32,23 @@ $(document).ready(function() {
 
 // BRANCHING:
 
-    if (side1Input === side2Input && side2Input === side3Input) {
-      $("#results").text("an Equilateral");
-    }
-    else if (side1Input === side2Input || side2Input === side3Input || side1Input === side3Input) {
-      $("#results").text("an Isoceles");
-    }
-    else if (side1Input + side2Input <= side3Input || side2Input + side3Input <= side1Input || side1Input + side3Input <= side2Input) {
-      $("#results").text("something other than a");
-    }
-    else {
-      $("#results").text("a Scalene");
-    }
+    // if (side1Input === side2Input && side2Input === side3Input) {
+    //   $("#results").text("an Equilateral");
+    // }
+    // else if (side1Input === side2Input || side2Input === side3Input || side1Input === side3Input) {
+    //   $("#results").text("an Isoceles");
+    // }
+    // else if (side1Input + side2Input <= side3Input || side2Input + side3Input <= side1Input || side1Input + side3Input <= side2Input) {
+    //   $("#results").text("something other than a");
+    // }
+    // else {
+    //   $("#results").text("a Scalene");
+    // }
 
+		var math = (hoursInput + adventurousInput + frontOrBackInput + popularityInput);
+		$(".math").text(math);
+
+// SCROLL TO RESULTS:
 
     let elmnt = document.getElementById("results");
     elmnt.scrollIntoView();
