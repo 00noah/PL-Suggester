@@ -1,9 +1,3 @@
-// BACK END:
-
-
-
-// FRONT END:
-
 $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
@@ -27,26 +21,40 @@ $(document).ready(function() {
 		var popularityInput = parseInt($("#popularity").val());
 		$(".popularity").text(popularityInput);
 
-		var languageInput = $("#language").val();
+		var languageInput = parseInt($("#language").val());
 		$(".language").text(languageInput);
 
 // BRANCHING:
 
-    // if (side1Input === side2Input && side2Input === side3Input) {
-    //   $("#results").text("an Equilateral");
-    // }
-    // else if (side1Input === side2Input || side2Input === side3Input || side1Input === side3Input) {
-    //   $("#results").text("an Isoceles");
-    // }
-    // else if (side1Input + side2Input <= side3Input || side2Input + side3Input <= side1Input || side1Input + side3Input <= side2Input) {
-    //   $("#results").text("something other than a");
-    // }
-    // else {
-    //   $("#results").text("a Scalene");
-    // }
+    var math = (hoursInput + adventurousInput + frontOrBackInput + popularityInput + languageInput);
+    $(".math").text(math);
 
-		var math = (hoursInput + adventurousInput + frontOrBackInput + popularityInput);
-		$(".math").text(math);
+    if (math <= 2) {
+      $("#results").text("RPG III");
+    }
+    else if (math <= 7) {
+      $("#results").text("V");
+    }
+    else if (math <= 9) {
+      $("#results").text("Ruby");
+    }
+    else if (math <= 10) {
+      $("#results").text("C#");
+    }
+    else if (math <= 12) {
+      $("#results").text("Go");
+    }
+    else if (math <= 13) {
+      $("#results").text("Swift");
+    }
+    else if (math <= 16) {
+      $("#results").text("Python");
+    }
+    else {
+      $("#results").text("JavaScript");
+    }
+
+
 
 // SCROLL TO RESULTS:
 

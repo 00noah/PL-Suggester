@@ -45,24 +45,24 @@
             <label for="adventurous">How adventurous are you? (Left = less adventurous, right = more adventurous)</label>
           </div>
           <div class="card-body">
-            <input type="range" class="custom-range" min="1" max="5" id="adventurous">
+            <input type="range" class="custom-range" min="0" max="5" id="adventurous">
           </div>
         </div>
 <!-- Question 4 -->
         <div class="card border-primary">
           <div class="card-header">
-            <label for="frontOrBack">Do you think you would prefer design (front end) or Business Logic (back end) in a language?</label>
+            <label for="frontOrBack">Do you think you would prefer working on business logic (back end) or design (front end) programming?</label>
           </div>
           <div class="card-body">
             <center>
-            <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value="10">
-              <label class="custom-control-label" for="customRadioInline1">Design</label>
-            </div>
-            <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" value="0">
-              <label class="custom-control-label" for="customRadioInline2">Business Logic</label>
-            </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" value="0" required>
+                <label class="custom-control-label" for="customRadioInline2">Business Logic</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value="10">
+                <label class="custom-control-label" for="customRadioInline1">Design</label>
+              </div>
             <center>
           </div>
         </div>
@@ -72,7 +72,7 @@
             <label for="popularity">How important is the language's <em>current</em> popularity to you? (Left = less so, right = more so)</label>
           </div>
           <div class="card-body">
-            <input type="range" class="custom-range" min="1" max="5" id="popularity">
+            <input type="range" class="custom-range" min="0" max="5" id="popularity">
           </div>
         </div>
 <!-- Question 6 -->
@@ -83,14 +83,14 @@
           <div class="card-body">
             <select class="form-control" id="language" required>
               <option value="0">Nope</option>
-              <option value="3">RPG III</option>
-              <option value="2">C#</option>
-              <option value="3">Go</option>
-              <option value="4">Ruby</option>
-              <option value="5">Swift</option>
-              <option value="5">Python</option>
-              <option value="5">V</option>
-              <option value="5">JavaScript</option>
+              <option value="1">RPG III</option>
+              <option value="2">V</option>
+              <option value="3">Ruby</option>
+              <option value="4">C#</option>
+              <option value="5">Go</option>
+              <option value="6">Swift</option>
+              <option value="7">Python</option>
+              <option value="8">JavaScript</option>
 
             </select>
           </div>
