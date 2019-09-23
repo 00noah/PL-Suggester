@@ -13,10 +13,8 @@ $(document).ready(function() {
 		var adventurousInput = parseInt($("#adventurous").val());
 		$(".adventurous").text(adventurousInput);
 
-		var frontOrBackInput = $("#frontOrBack").val();
+		var frontOrBackInput = $('input[name=customRadioInline1]:checked').val();
 		$(".frontOrBack").text(frontOrBackInput);
-
-		$("#questions input[type='radio']:checked").val();
 
 		var popularityInput = parseInt($("#popularity").val());
 		$(".popularity").text(popularityInput);
