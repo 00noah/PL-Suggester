@@ -1,12 +1,26 @@
 $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
-    // let side2Input = parseInt($("#side2").val());
-    // let side3Input = parseInt($("#side3").val());
+
+		$(".jumbotron").show();
+
 		var nameInput = $("#firstName").val();
     $(".firstName").text(nameInput);
 
-    $(".jumbotron").show();
+		var hoursInput = $("#hours").val();
+    $(".hours").text(hoursInput);
+
+		var adventurousInput = parseInt($("#adventurous").val());
+		$(".adventurous").val(adventurousInput);
+
+		var frontOrBackInput = $("#frontOrBack").val();
+		$(".frontOrBack").text(frontOrBackInput);
+
+		var popularityInput = $("#popularity").val();
+		$(".popularity").text(popularityInput);
+
+		var languageInput = $("#language").val();
+		$(".language").text(languageInput);
 
     // if (side1Input === side2Input && side2Input === side3Input) {
     //   $("#results").text("an Equilateral");
@@ -20,10 +34,6 @@ $(document).ready(function() {
     // else {
     //   $("#results").text("a Scalene");
     // }
-
-
-		alert((nameInput))
-
 
 
     let elmnt = document.getElementById("results");
